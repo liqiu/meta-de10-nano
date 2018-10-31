@@ -5,7 +5,13 @@ This layer provides support for building a demonstration and development image o
 
 ## Build Intructions
 Please refer to [README.md](https://github.com/Angstrom-distribution/angstrom-manifest/blob/master/README.md) for any prerequisits, these instuctions assume prerequisits have been met.  Please also note the instructions for configuring proxies.
-
+### Step 0: Setup host container
+```
+lxc-create -t download -n socfpga -- -d ubuntu -r xenial -a amd64
+sudo apt-get install gawk wget git-core diffstat unzip texinfo gcc-multilib \
+     build-essential chrpath socat cpio python python3 python3-pip python3-pexpect \
+     xz-utils debianutils iputils-ping python-dev
+```
 ### Step 1: Cloning the manifest
 We need to clone the manifest to get all of the recipes required for building
 ```
