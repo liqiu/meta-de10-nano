@@ -26,7 +26,7 @@ INHERIT += " rootfs_ipk "
 BAD_RECOMMENDATIONS = " libavahi-core avahi-utils avahi-daemon avahi-autoipd libnss-mdns cpufrequtils fbset consolekit wireless-tools "
 RDEPENDS_pulseaudio-module-console-kit_remove = "consolekit"
 
-DISTRO_FEATURES_remove = "opengl"                                               
+#DISTRO_FEATURES_remove = "opengl"
 DISTRO_FEATURES_remove = "opencl"                                               
 DISTRO_FEATURES_remove = "wayland"                                              
 DISTRO_FEATURES_remove = "zeroconf"
