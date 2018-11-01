@@ -12,6 +12,10 @@ sudo apt-get install gawk wget git-core diffstat unzip texinfo gcc-multilib \
      build-essential chrpath socat cpio python python3 python3-pip python3-pexpect \
      xz-utils debianutils iputils-ping python-dev
 ```
+```
+sudo dpkg-reconfigure dash
+```
+select "no".
 ### Step 1: Cloning the manifest
 We need to clone the manifest to get all of the recipes required for building
 ```
